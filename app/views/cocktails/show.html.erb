@@ -1,11 +1,43 @@
-<h1> <%= @cocktail.name  %></h1>
-<h2>Ingredients</h2>
-<li>
-  <% @cocktail.ingredients.each do |ingredient|%>
-    <ul><%= ingredient.name %></ul>
-  <% end %>
-</li>
 
-<br>
+<div class= "wrapper">
+  <div style="height: 80px; width: 100%"></div>
+  <div class="cocktail-container">
 
-<%= render 'doses/form', {cocktail: @cocktail, dose: @dose} %>
+
+  <div class="cocktail-background"
+    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+           url('<%= cl_image_path @cocktail.photo, height: 300, width: 576, crop: :fill %>')">
+   </div>
+   <div class="recipe-card">
+      <div class="recipe-title">
+        <%= @cocktail.name.upcase  %>
+      </div>
+      <div class="recipe-ingredients">
+        <div class="section-title">
+          Ingredients
+        </div>
+        <div class="ingredients-list">
+          <ul>
+            <% @cocktail.ingredients.each do |ingredient|%>
+              <p> <%= ingredient.name %></p>
+            <% end %>
+          </ul>
+        </div>
+        <!-- <%= render 'doses/form', {cocktail: @cocktail, dose: @dose} %> -->
+      </div>
+      <div class="recipe-instructions">
+        <div class="section-title">
+          Instructions
+        </div>
+        <ol>
+          <li>Open stuff</li>
+          <li>Mix stuff</li>
+          <li>Drink stuff</li>
+        </ol>
+      </div>
+    </div>
+
+   </div>
+
+  </div>
+</div>

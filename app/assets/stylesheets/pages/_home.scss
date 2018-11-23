@@ -30,14 +30,15 @@
 
 body {
   font-family: 'Roboto Condensed', Helvetica, sans-serif ;
-  color: $text-gray;
+  color: $main-blue;
 }
 
 p {
-  color: $text-gray;
+  color: $main-blue;
+  font-family: 'Roboto Condensed';
 }
 
-h2 {
-  font-family: 'Roboto Condensed';
+h2, h1 {
+  font-family: 'Roboto Condensed', Helvetica, sans-serif ;
   font-color: $main-blue;
 }

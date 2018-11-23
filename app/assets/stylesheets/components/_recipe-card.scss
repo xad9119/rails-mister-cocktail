@@ -1,0 +1,39 @@
+
+
+.recipe-card{
+  font-family: 'Cabin', Helvetica, sans-serif;
+  margin-top: 10px;
+  padding: 0px 3px 5px 5px;
+  border: 1px solid $border-light-gray;
+  border-top: 3px solid #141414;
+  p, h1, h2, li {
+    font-family: 'Cabin', Helvetica, sans-serif;
+  }
+  p, li {
+    font-size: 13px;
+  }
+
+}
+.section-title {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  padding-bottom: 3px;
+}
+.recipe-title {
+  margin: 0px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid $border-light-gray;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.recipe-ingredients {
+  width: 40%;
+  p {
+    padding: 1px 0px 1px 0px;
+    margin: 0px;
+    font-weight: 700;
+    border-bottom: 1px dotted #141414
+  }
+}

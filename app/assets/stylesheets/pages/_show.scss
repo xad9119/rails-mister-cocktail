@@ -1,0 +1,13 @@
+.cocktail-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  letter-spacing: 4px;
+  color: $light-gray;
+}
+
+.cocktail-container {
+  width: 40%;
+  margin: auto
+}
