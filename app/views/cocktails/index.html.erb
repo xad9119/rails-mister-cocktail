@@ -1,0 +1,21 @@
+
+<div class="wrapper">
+  <div class="home-background" style="background-image: url(<%= asset_path 'home-bar.jpg' %>); height: 500px"></div>
+  <div class="container">
+    <h2 class="page-header text-center">cocktails</h2>
+    <div class="row">
+      <% @cocktails.each do |cocktail|  %>
+        <div class="col-3">
+          <div class="card" style="width: 80%;">
+            <% url="'https://loremflickr.com/g/320/240/#{cocktail.name.downcase}'" %>
+            <div class="card-img-top" style="background-image: url(<%= url  %>); background-repeat: no-repeat;background-size: cover;">
+              <div class="card-title text-center">
+                <h2> - <%= cocktail.name.downcase %> - </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

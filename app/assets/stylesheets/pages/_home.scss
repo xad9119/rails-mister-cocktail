@@ -1,1 +1,43 @@
 // Specific CSS for your home-page
+
+.wrapper {
+  background-color: $light-gray;
+  height: 100%;
+}
+.container {
+  width: 80%;
+  margin: auto
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 5px;
+}
+.page-header {
+    font-family: 'Roboto Condensed', Helvetica, sans-serif ;
+    font-size: 20px;
+    letter-spacing: 5px;
+    width: 100%;
+    color: $main-blue;
+    border-bottom: 1px solid $main-blue;
+}
+
+body {
+  font-family: 'Roboto Condensed', Helvetica, sans-serif ;
+  color: $text-gray;
+}
+
+p {
+  color: $text-gray;
+}
+
+h2 {
+  font-family: 'Roboto Condensed';
+  font-color: $main-blue;
+}

@@ -11,6 +11,22 @@
   </head>
 
   <body>
+  <nav class="navbar-wagon navbar-fixed-top">
+    <%= link_to 'D R I N K S', cocktails_path, class: 'navbar-brand' %>
+
+    <div class="navbar-wagon-right">
+      <div class="form-inline">
+        <form action="">
+          <input type="text" name="search_value" class="form-control">
+          <input type="submit" class="btn btn-outline-success" value="search">
+          <%= link_to 'add drinks', new_cocktail_path, class: 'btn btn-outline-primary' %>
+        </form>
+      </div>
+    </div>
+
+
+  </nav>
+
     <%= yield %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
